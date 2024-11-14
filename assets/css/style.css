@@ -1,0 +1,613 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+    scroll-behavior: smooth;
+    transition: all ease 0.3s;
+    font-family: "Jost",sans-serif;
+}
+
+/* font connect start */
+@font-face {
+    font-family: "Jost";
+    src: url(../fonts/Jost-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url(../fonts/Jost-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url(../fonts/Jost-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url(../fonts/Jost-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Comfortaa", sans-serif;
+    src: url(../fonts/Comfortaa_Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url(../fonts/comfortaa-semibold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Comfortaa", sans-serif;
+    src: url(../fonts/Comfortaa.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Comfortaa", sans-serif;
+    src: url(../fonts/ofont.ru_Comfortaa.ttf);
+    font-weight: 400;
+}
+/* font connect end */
+
+/* body start */
+body {
+    background-color: #f9f4f2;
+}
+/* body end */
+
+/* button to top start */
+.btn_to_top{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+    border: 3px solid #5D917B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+/* button to top end */
+
+/* container start */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* container end */
+
+/* my-200 start */
+.my-200 {
+    margin-top: 200px;
+}
+/* my-200 start */
+
+/* h1 start */
+h1 {
+    font-size: 90px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    color: #36564B;
+    margin-top: 178px;
+    text-align: center;
+    width: 1178px;
+}
+/* h1 end */
+
+/* title start */
+.title {
+    padding-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h2 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #EEC67A;
+}
+/* title end */
+
+/* photo start */
+.photo {
+    background-image: url(../image/banner/banner.png);
+    background-size: 100%;
+    height: 1000px;
+    width: 1500px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+/* photo end */
+
+/* header start */
+header {
+    height: 120px;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.phone p {
+    font-weight: 400;
+    font-family: "Comfortaa", sans-serif;
+    color: #36564B;
+    font-size: 20px;
+}
+
+.phone_button {
+    border-radius: 38px;
+    background: linear-gradient(45deg, #EEC67A, #FFD990);
+    padding: 23px 45px;
+}
+
+.phone_button:hover {
+    transform: scale(1.05);
+}
+
+
+.phone_button a {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Comfortaa", sans-serif;
+    color: #fff;
+}
+/* header end */
+
+/* banner start */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner_button {
+    border-radius: 38px;
+    background: linear-gradient(45deg, #EEC67A, #FFD990);
+    padding: 23px 76px;
+    margin-top: 188px;
+    transition: all ease 0.5s;
+}
+
+.banner_button a {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Comfortaa", sans-serif;
+    color: #fff;
+}
+
+.banner_button:hover {
+    transform: scale(1.1);
+}
+/* banner end */
+
+/* hot tours start */
+.filters {
+    background-color: #fff;
+    width: 1300px;
+    height: 153px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px rgb(181, 181, 181, 25%);
+    display: flex;
+    align-items: center;
+    padding: 0px 71px;
+    gap: 12px;
+}
+
+.filters_button {
+    background-color: #fff;
+    width: 222px;
+    height: 70px;
+    border-radius: 38px;
+    box-shadow: 5px 5px 20px rgb(181, 181, 181, 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.filters_button p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #5A5A5A;
+}
+
+.filters_button:hover {
+    color: #fff;
+    background-color: #FFD990;
+}
+
+.filters_button:hover p {
+    color: #fff;
+}
+
+.tours_catalog {
+    margin-top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 62px;
+}
+
+.tour_card {
+    background-color: #fff;
+    width: 392px;
+    height: 700px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px rgb(181, 181, 181, 25%);
+    padding: 12px;
+    position: relative;
+}
+
+.card_description {
+    padding-left: 24px;
+    margin-top: 8px;
+}
+
+.card_name p {
+    font-size: 40px;
+    font-family: "Jost",sans-serif;
+    font-weight: 600;
+    color: #5A5A5A;
+    line-height: 40px;
+}
+
+.card_direction p {
+    font-size: 24px;
+    font-family: "Jost",sans-serif;
+    font-weight: 400;
+    color: #525252;
+    margin-top: 10px;
+}
+
+.card_price p {
+    font-size: 32px;
+    font-family: "Jost",sans-serif;
+    font-weight: 400;
+    color: #878787;
+    margin-top: 40px;
+}
+
+.card_button {
+    border-radius: 38px;
+    background: linear-gradient(45deg, #EEC67A, #FFD990);
+    padding: 23px 0px;
+    width: 368px;
+    text-align: center;
+    position: absolute;
+    bottom: 12px;
+}
+
+.card_button a {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.card_button:hover {
+    transform: scale(1.05);
+}
+/* hot tours end */
+
+/* consultants start */
+.con_list {
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.con_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.con_name p {
+    font-size: 32px;
+    font-weight: 600;
+    color: #36564B;
+}
+
+.con_description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.con_description p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #5D917B;
+    text-align: center;
+}
+/* consultants end */
+
+/* advantages start */
+.adv_list{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.adv_first {
+    width: 100%;
+    height: 346px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px rgb(181, 181, 181, 25%);
+    display: flex;
+    padding: 12px;
+}
+
+.adv_content_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 75px;
+    gap: 10px;
+}
+
+.adv_name p{
+    font-size: 32px;
+    font-weight: 500;
+    color: #36564B;
+}
+
+.adv_description p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #5D917B;
+}
+
+.adv_second {
+    width: 100%;
+    height: 346px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px rgb(181, 181, 181, 25%);
+    display: flex;
+    padding: 12px;
+    flex-direction: row-reverse;
+}
+
+.adv_content_second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 75px;
+    gap: 10px;
+    text-align: right;
+}
+
+.adv_third {
+    width: 100%;
+    height: 346px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 5px 5px 20px rgb(181, 181, 181, 25%);
+    display: flex;
+    padding: 12px;
+}
+
+.adv_content_third {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 75px;
+    gap: 10px;
+}
+/* advantages end */
+
+/* reviews start */
+.review_button_left{
+    border-radius: 50%;
+    background: linear-gradient(45deg, #EEC67A, #FFD990);
+    padding: 18px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.review_button_left:hover {
+    transform: scale(1.05);
+}
+
+.reviews_list{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.review{
+    padding: 12px 25px;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgb(181, 181, 181, 25%);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review_info{
+    display: flex;
+    align-items: center;
+}
+
+.review_name{
+    margin-left: 17px;
+}
+
+.review_name p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #36564B;
+}
+
+.review_score{
+    display: flex;
+    gap: 5px;
+    margin-left: 32px;
+}
+
+.review_description p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #878787;
+}
+
+.review_button_right{
+    border-radius: 50%;
+    background: linear-gradient(45deg, #EEC67A, #FFD990);
+    padding: 18px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.review_button_right:hover {
+    transform: scale(1.05);
+}
+/* reviews end */
+
+/* tour selection start */
+.tour_selection{
+    width: 100%;
+    height: 154px;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px rgb(181, 181, 181, 25%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 0px 71px;
+    gap: 33px;
+}
+
+.selection_button{
+    border-radius: 50%;
+    background: linear-gradient(45deg, #EEC67A, #FFD990);
+    padding: 18px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.selection_button:hover {
+    transform: scale(1.05);
+}
+
+form{
+    display: flex;
+    gap: 30px;
+}
+
+input{
+    background-color: #F5F5F5;
+    box-shadow: 5px 5px 5px rgb(201, 201, 201, 25%);
+    border: none;
+    width: 240px;
+    height: 70px;
+    border-radius: 38px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    color: #707070;
+    font-size: 24px;
+}
+
+input[type="date"]{
+    font-size: 24px;
+    font-weight: 400;
+    color: #C2C2C2;
+    line-height: 40px;
+}
+
+input::placeholder{
+    font-size: 24px;
+    font-weight: 400;
+    color: #C2C2C2;
+    line-height: 40px;
+}
+
+.data::placeholder{
+    color: #36564B;
+}
+/* tour selection end */
+
+/* footer start */
+footer{
+    background-color: #EBD8B3;
+    width: 100%;
+    height: 284px;
+}
+
+.footer_content{
+    height: 284px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.web_developer{
+    width: 363px;
+}
+
+.web_developer p{
+    font-family: "Comfortaa";
+    font-size: 32px;
+    font-weight: 700;
+    color: #36564B;
+}
+
+.social_network{
+    display: flex;
+    gap: 35px;
+}
+
+.social_network img{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.social_network img:hover{
+    transform: rotate(360deg);
+    transition: .5s;
+}
+/* footer end */
